@@ -6,16 +6,18 @@ import { TaskProvider } from './contexts/TaskContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Task Manager</h1>
-        <p>Coming soon...</p>
-        <TaskProvider>
-          <TaskForm />  
-          <TaskList />
-        </TaskProvider>
-      </header>
-    </div>
+    <TaskProvider>
+      <div className="App">
+        <header className="App-header">
+          <h1>Task Manager</h1>
+          <p>Coming soon...</p>
+
+            <TaskForm />  
+            <TaskList />
+
+        </header>
+      </div>
+    </TaskProvider>    
   );
 }
 
